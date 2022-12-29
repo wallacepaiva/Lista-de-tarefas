@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(207, 86, 153) 0%,
+    rgb(114, 15, 106) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* caixa ao redor do adicionar */
+.container {
+  border: 2px solid #fff;
+  padding: 30px 40px;
+  width: 40%;
+  min-width: 500px;
+}
+/* Caixa Branca */
+.new-task-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgb(0, 0, 0.3);
+  display: flex;
+}
+/* Input */
+.new-task-container input {
+  flex: 3;
+  font-size: 1rem;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: 500;
+}
+/* Cor ao redor do Input */
+.new-task-container input:focus {
+  outline: none;
+  border-color: rgb(170, 60, 170);
+}
+
+/* Botão de adicionar */
+.new-task-button {
+  flex: 1;
+  border-radius: 5px;
+  font-weight: 500px;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(170, 60, 170);
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+/* Caixa das tarefas */
+.tasks-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.task-item i {
+  background-color: rgb(170, 60, 170);
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.task-item i:hover {
+  cursor: pointer;
+}
+
+/* Utilities */
+.error {
+  border: 2px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+}
